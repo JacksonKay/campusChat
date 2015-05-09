@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		663F39861AFE37EE0044811C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F39851AFE37EE0044811C /* main.m */; };
 		663F39891AFE37EE0044811C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F39881AFE37EE0044811C /* AppDelegate.m */; };
-		663F398C1AFE37EE0044811C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F398B1AFE37EE0044811C /* ViewController.m */; };
-		663F398F1AFE37EE0044811C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663F398D1AFE37EE0044811C /* Main.storyboard */; };
 		663F39911AFE37EE0044811C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663F39901AFE37EE0044811C /* Images.xcassets */; };
-		663F39941AFE37EE0044811C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663F39921AFE37EE0044811C /* LaunchScreen.xib */; };
 		663F39A01AFE37EE0044811C /* campusChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F399F1AFE37EE0044811C /* campusChatTests.m */; };
+		663F39AC1AFE40270044811C /* YJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F39AB1AFE40270044811C /* YJHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +30,13 @@
 		663F39851AFE37EE0044811C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		663F39871AFE37EE0044811C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		663F39881AFE37EE0044811C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		663F398A1AFE37EE0044811C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		663F398B1AFE37EE0044811C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		663F398E1AFE37EE0044811C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		663F39901AFE37EE0044811C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		663F39931AFE37EE0044811C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		663F39991AFE37EE0044811C /* campusChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = campusChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		663F399E1AFE37EE0044811C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		663F399F1AFE37EE0044811C /* campusChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = campusChatTests.m; sourceTree = "<group>"; };
+		663F39AA1AFE40270044811C /* YJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHomeViewController.h; sourceTree = "<group>"; };
+		663F39AB1AFE40270044811C /* YJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHomeViewController.m; sourceTree = "<group>"; };
+		663F39AD1AFE405D0044811C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +78,10 @@
 		663F39821AFE37EE0044811C /* campusChat */ = {
 			isa = PBXGroup;
 			children = (
+				663F39A91AFE40110044811C /* ViewController */,
 				663F39871AFE37EE0044811C /* AppDelegate.h */,
 				663F39881AFE37EE0044811C /* AppDelegate.m */,
-				663F398A1AFE37EE0044811C /* ViewController.h */,
-				663F398B1AFE37EE0044811C /* ViewController.m */,
-				663F398D1AFE37EE0044811C /* Main.storyboard */,
 				663F39901AFE37EE0044811C /* Images.xcassets */,
-				663F39921AFE37EE0044811C /* LaunchScreen.xib */,
 				663F39831AFE37EE0044811C /* Supporting Files */,
 			);
 			path = campusChat;
@@ -98,6 +92,7 @@
 			children = (
 				663F39841AFE37EE0044811C /* Info.plist */,
 				663F39851AFE37EE0044811C /* main.m */,
+				663F39AD1AFE405D0044811C /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +112,15 @@
 				663F399E1AFE37EE0044811C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		663F39A91AFE40110044811C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				663F39AA1AFE40270044811C /* YJHomeViewController.h */,
+				663F39AB1AFE40270044811C /* YJHomeViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +203,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				663F398F1AFE37EE0044811C /* Main.storyboard in Resources */,
-				663F39941AFE37EE0044811C /* LaunchScreen.xib in Resources */,
 				663F39911AFE37EE0044811C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				663F398C1AFE37EE0044811C /* ViewController.m in Sources */,
+				663F39AC1AFE40270044811C /* YJHomeViewController.m in Sources */,
 				663F39891AFE37EE0044811C /* AppDelegate.m in Sources */,
 				663F39861AFE37EE0044811C /* main.m in Sources */,
 			);
@@ -242,25 +244,6 @@
 			targetProxy = 663F399A1AFE37EE0044811C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		663F398D1AFE37EE0044811C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				663F398E1AFE37EE0044811C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		663F39921AFE37EE0044811C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				663F39931AFE37EE0044811C /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		663F39A11AFE37EE0044811C /* Debug */ = {
@@ -418,6 +401,7 @@
 				663F39A51AFE37EE0044811C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		663F39A61AFE37EE0044811C /* Build configuration list for PBXNativeTarget "campusChatTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +410,7 @@
 				663F39A81AFE37EE0044811C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

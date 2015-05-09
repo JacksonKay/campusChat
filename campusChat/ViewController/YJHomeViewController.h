@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YJHomeViewController.h
 //  campusChat
 //
 //  Created by yejun on 15/5/9.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YJHomeViewController : UIViewController
 
 @end
-
